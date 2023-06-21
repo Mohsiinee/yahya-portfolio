@@ -119,6 +119,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 .left-column-h1-span {
   color: #cdb608; 
@@ -637,6 +638,32 @@ iframe {
 }
 .footer-column ul li {
   margin-bottom: 10px;
+}
+header .social-icons {
+  position: absolute;
+  bottom: -90%;
+  left: 25%;
+}
+header .social-icons i {
+  padding: 0em .5em;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .social-icons i {
+  margin: 1em;
+}
+.fa-brands, .fab {
+    font-size: 1.5em;
+}
+
+.social-icons a {
+  color: #ffffff;
+}
+.social-icons a:hover {
+  color: #cdb608;
 }
 .footer-container {
   border-bottom: solid grey 1px;

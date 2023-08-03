@@ -42,7 +42,7 @@ ul {
 }
 /*---------------------------------------------------------Header - START-------------------------------------------*/
 .navbar-scrolled {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.30);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.30); 
 }
 .navbar {
   display: flex;
@@ -51,9 +51,9 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
+  background-color: #36454F;
   width: 100%;
   padding: 0 3rem;
-  background-color: #36454F;
   height: 60px;
   z-index: 1000;
 }
@@ -110,8 +110,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: calc(100% - 60px);
-  padding-top: 60px;
+  height: 100vh;
   padding-left: 3rem;
 }
 .left-column {
@@ -119,7 +118,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
+  align-items: center;
 }
 .left-column-h1-span {
   color: #cdb608; 
@@ -166,7 +165,9 @@ header {
   align-items: center;
 }
 .right-column img {
-  width: 100%;
+  height: 100vh;
+  right: 0;
+  position: absolute;
 }
 .decorative-divider {
   display: block;
@@ -184,6 +185,7 @@ header {
     flex-direction: column;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    height: auto;
   }
   .left-column {
     align-items: center;
@@ -248,6 +250,15 @@ header {
 
   .hamburger {
     display: flex;
+  }
+
+  .right-column img {
+    height: auto;
+    width: 100vw;
+    position: relative;
+  }
+  .social-icons {
+    display: none;
   }
 }
 /*---------------------------------------------------------Header - END------------------------------------------*/
@@ -641,8 +652,8 @@ iframe {
 }
 header .social-icons {
   position: absolute;
-  bottom: -90%;
-  left: 25%;
+  bottom: 0;
+  padding: 2.5em;
 }
 header .social-icons i {
   padding: 0em .5em;
